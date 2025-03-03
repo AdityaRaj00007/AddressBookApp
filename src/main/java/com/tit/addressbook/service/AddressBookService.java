@@ -1,8 +1,10 @@
 package com.tit.addressbook.service;
 import com.tit.addressbook.dto.AddressBookDTO;
 import com.tit.addressbook.model.AddressBookEntry;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import java.util.*;
+@Slf4j
 @Service
 public class AddressBookService {
     private final List<AddressBookEntry> entries = new ArrayList<>();
